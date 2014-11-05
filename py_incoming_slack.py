@@ -5,7 +5,7 @@ import requests
 import json
 import argparse
 
-class incoming_slack:
+class py_incoming_slack:
     def __init__(self, token_url, user_name, icon = ''):
         self.token_url = token_url
         self.user_name = user_name
@@ -54,9 +54,9 @@ def main():
     title     = args['title']
     color     = args['color']
     if icon != '':
-        slack_instance = incoming_slack(token_url, user_name, icon)
+        slack_instance = py_incoming_slack(token_url, user_name, icon)
     else:
-        slack_instance = incoming_slack(token_url, user_name)
+        slack_instance = py_incoming_slack(token_url, user_name)
     if title !='':
         slack_instance.send(message, title, color)        
     else:

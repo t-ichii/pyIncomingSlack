@@ -26,13 +26,13 @@ EX. `https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx`
 ### Import module
 
 ```
->>> import incoming_slack
+>>> import py_incoming_slack
 ```
 
 ### Preliminary preparation
 
 ```
-incomming_slack()
+py_incoming_slack.py_incoming_slack()
 ```
 
 #### Parameter
@@ -46,19 +46,19 @@ incomming_slack()
 #### Ex
 
 ```
->>> slack_instance = incomming_slack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot')
+>>> slack_instance = py_incoming_slack.py_incoming_slack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot')
 ```
 
 you want to use emoji icon,
 
 ```
->>> slack_instance = incomming_slack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot', icon=":ghost:")
+>>> slack_instance = py_incoming_slack.py_incoming_slack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot', icon=":ghost:")
 ```
 
 you want to use image icon,
 
 ```
->>> slack_instance = incomming_slack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot', icon="http://hogehoge/hoge.png")
+>>> slack_instance = py_incoming_slack.py_incoming_slack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot', icon="http://hogehoge/hoge.png")
 ```
 
 ### Post message
@@ -91,8 +91,8 @@ You can choice color parameter 'good', 'warning', 'danger' or hex color code(ex:
 
 ```
 $ ./py_incoming_slack.py -h
-usage: untitled.py [-h] -t TOKEN_URL -u USER_NAME -m MESSAGE [-i ICON]
-                   [-T TITLE] [-c COLOR]
+usage: py_incoming_slack.py [-h] -t TOKEN_URL -u USER_NAME -m MESSAGE [-i ICON]
+                            [-T TITLE] [-c COLOR]
 
 This script send message for Slack.
 
