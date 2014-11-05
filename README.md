@@ -90,7 +90,7 @@ You can choice color parameter 'good', 'warning', 'danger' or hex color code(ex:
 ### Shell usage
 
 ```
-$ ./untitled.py -h
+$ ./py_incoming_slack.py -h
 usage: untitled.py [-h] -t TOKEN_URL -u USER_NAME -m MESSAGE [-i ICON]
                    [-T TITLE] [-c COLOR]
 
@@ -113,7 +113,7 @@ optional arguments:
                         color parameter "good", "warning", "danger" or hex
                         color code(ex:"#36a64f"). This parameter require to
                         add title parameter 
-$ ./untitled.py \
+$ ./py_incoming_slack.py \
 -t https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/ \
 -u Python_ghost \
 -m "test message" \
