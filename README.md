@@ -1,4 +1,4 @@
-# py_incoming_slack
+# pyIncomingSlack
 
 ## Description
 
@@ -26,13 +26,13 @@ EX. `https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx`
 ### Import module
 
 ```
->>> import py_incoming_slack
+>>> import pyIncomingSlack
 ```
 
 ### Preliminary preparation
 
 ```
-py_incoming_slack.py_incoming_slack()
+pyIncomingSlack.pyIncomingSlack()
 ```
 
 #### Parameter
@@ -46,19 +46,19 @@ py_incoming_slack.py_incoming_slack()
 #### Ex
 
 ```
->>> slack_instance = py_incoming_slack.py_incoming_slack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot')
+>>> slack_instance = pyIncomingSlack.pyIncomingSlack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot')
 ```
 
 you want to use emoji icon,
 
 ```
->>> slack_instance = py_incoming_slack.py_incoming_slack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot', icon=":ghost:")
+>>> slack_instance = pyIncomingSlack.pyIncomingSlack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot', icon=":ghost:")
 ```
 
 you want to use image icon,
 
 ```
->>> slack_instance = py_incoming_slack.py_incoming_slack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot', icon="http://hogehoge/hoge.png")
+>>> slack_instance = pyIncomingSlack.pyIncomingSlack(token_url = 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx', user_name = 'python_bot', icon="http://hogehoge/hoge.png")
 ```
 
 ### Post message
@@ -90,9 +90,9 @@ You can choice color parameter 'good', 'warning', 'danger' or hex color code(ex:
 ### Shell usage
 
 ```
-$ ./py_incoming_slack.py -h
-usage: py_incoming_slack.py [-h] -t TOKEN_URL -u USER_NAME -m MESSAGE [-i ICON]
-                            [-T TITLE] [-c COLOR]
+$ ./pyIncomingSlack -h
+usage: pyIncomingSlack [-h] -t TOKEN_URL -u USER_NAME -m MESSAGE [-i ICON]
+                       [-T TITLE] [-c COLOR]
 
 This script send message for Slack.
 
@@ -113,7 +113,7 @@ optional arguments:
                         color parameter "good", "warning", "danger" or hex
                         color code(ex:"#36a64f"). This parameter require to
                         add title parameter 
-$ ./py_incoming_slack.py \
+$ ./pyIncomingSlack \
 -t https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/ \
 -u Python_ghost \
 -m "test message" \
