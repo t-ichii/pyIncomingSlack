@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+__author__ = 'Takeru Ichii'
+
 import requests
 import json
 import argparse
