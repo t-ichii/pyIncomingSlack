@@ -22,7 +22,7 @@ class pyIncomingSlack:
                 ,'value' : message
             }
             params['fallback'] = message
-            params['fields'] = '[' + json.dumps(fields) + ']'
+            params['fields'] = '[' + json.dumps(fields, ensure_ascii = False) + ']'
         else:
             params['text'] = message
         try:
@@ -33,7 +33,7 @@ class pyIncomingSlack:
             params[icon_key] = self.icon
         except:
             pass
-        params = json.dumps(params)
+        params = json.dumps(params, ensure_ascii = False)
         params = params.replace('"[', '[')
         params = params.replace(']"', ']')
         params = params.replace('\\', '')
