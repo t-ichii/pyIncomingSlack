@@ -37,6 +37,7 @@ class pyIncomingSlack:
         params = params.replace('"[', '[')
         params = params.replace(']"', ']')
         params = params.replace('\\', '')
+        params = params.encode('utf-8')
         response = requests.post(self.token_url, data = params)
         return response
 
