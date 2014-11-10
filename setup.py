@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name          = 'pyIncomingSlack'
-    ,version      = '0.1.2'
+    ,version      = '0.1.3'
     ,description  = 'Post to Slack Channel/Groups using "Incoming WebHooks"'
     ,license      = 'MIT'
     ,author       = 'Takeru Ichii'

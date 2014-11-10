@@ -21,6 +21,12 @@
 4. You Copy URL into "Webhook URL". 
 EX. `https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxxx`
 
+### Install module
+
+```
+pip install pyIncomingSlack
+```
+
 ## Usage
 
 ### Import module
@@ -90,7 +96,7 @@ You can choice color parameter 'good', 'warning', 'danger' or hex color code(ex:
 ### Shell usage
 
 ```
-$ ./pyIncomingSlack -h
+$ pyIncomingSlack -h
 usage: pyIncomingSlack [-h] -t TOKEN_URL -u USER_NAME -m MESSAGE [-i ICON]
                        [-T TITLE] [-c COLOR]
 
@@ -113,7 +119,7 @@ optional arguments:
                         color parameter "good", "warning", "danger" or hex
                         color code(ex:"#36a64f"). This parameter require to
                         add title parameter 
-$ ./pyIncomingSlack \
+$ pyIncomingSlack \
 -t https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxxx/ \
 -u Python_ghost \
 -m "test message" \
